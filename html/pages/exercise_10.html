@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>learn.javascript.ru</title>
+</head>
+<body>
+<h1>Exercise 10</h1>
+
+<script>
+
+    var login = prompt('insert login');
+    var message;
+
+    message = (login == '') ? "No insert"
+        : (login == 'Вася') ? 'Привет'
+            : (login == 'Директор') ? 'Здравствуйте' : 'Wrong login';
+
+    alert(message);
+    //
+    // if (login == 'Вася') {
+    //     message = 'Привет';
+    // } else if (login == 'Директор') {
+    //     message = 'Здравствуйте';
+    // } else if (login == '') {
+    //     message = 'Нет логина';
+    // } else {
+    //     message = '';
+    // }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>learn.javascript.ru</title>
+</head>
+<body>
+<h1>Exercise</h1>
+
+<script>
+    let styles = ["Джаз", "Блюз»"];
+
+    styles.push("Рок-н-Ролл");
+    styles[styles.length - 2] = "Классика";
+    alert(styles.shift());
+    styles.unshift("Рэп", "Регги");
+
+    let min = 0, max = styles.length-1;
+
+    let rand = min + Math.floor(Math.random() * (max + 1 - min));
+    alert(styles[rand]);
+
+</script>
+
+</body>
+</html>

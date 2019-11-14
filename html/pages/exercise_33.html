@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>learn.javascript.ru</title>
+</head>
+<body>
+<h1>Exercise</h1>
+
+<script>
+    let numberArray = [], number = 0, sum = 0;
+
+    while (number !== '') {
+        number = prompt("Number? ", '');
+
+        if (number !== '') {
+            numberArray.push(number);
+        }
+    }
+
+    for (let i = 0; i < numberArray.length - 1; i++) {
+        sum += +numberArray[i];
+    }
+
+    alert(sum);
+
+</script>
+
+</body>
+</html>

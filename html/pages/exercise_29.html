@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>learn.javascript.ru</title>
+</head>
+<body>
+<h1>Exercise</h1>
+
+<script>
+    "use strict";
+
+    let salaries = {
+        "Вася": 100,
+        "Петя": 300,
+        "Даша": 250
+    };
+
+    let maxSalary = 0;
+    let nameWithMaxSalary = "Нет сотрудников";
+
+    for (let name in salaries) {
+        if (+salaries[name] > maxSalary) {
+            maxSalary = +salaries[name];
+            nameWithMaxSalary = name;
+        }
+    }
+
+    alert(nameWithMaxSalary);
+</script>
+
+</body>
+</html>

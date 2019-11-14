@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>learn.javascript.ru</title>
+</head>
+<body>
+<h1>Exercise</h1>
+
+<script>
+
+    let numbers = [];
+    let n = 100;
+    let sum = 0;
+
+    for (let i = 0; i <= n; i++) {
+        numbers.push(i);
+    }
+
+    for (let j = 2; Math.pow(j, 2) < n; j += 2) {
+        for (let i = 1, index = j; index < numbers.length; i++, index = i * j) {
+            numbers[index] = 0;
+        }
+
+        for(let i = j+1, f = false; f === false ; i++) {
+            if(numbers[i] > 0) {
+                j = i;
+                f = true;
+            }
+        }
+    }
+
+    for(let i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+    }
+
+    alert(sum);
+
+</script>
+
+</body>
+</html>

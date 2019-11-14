@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>learn.javascript.ru</title>
+</head>
+<body>
+<h1>Exercise</h1>
+
+<!--<script>-->
+<!--    let user = {};-->
+<!--    user.name = "Jogn";-->
+<!--    user.surname = "Smith";-->
+<!--    user.name = "Pete";-->
+
+<!--    delete user.name;-->
+
+<!--    console.log(user);-->
+<!--</script>-->
+
+<!--<script>-->
+<!--    let schedule = {};-->
+
+<!--    alert(isEmpty(schedule)); // true-->
+
+<!--    schedule["8:30"] = "get up";-->
+
+<!--    alert(isEmpty(schedule)); // false-->
+
+<!--    function isEmpty(object) {-->
+<!--        let flag = "";-->
+
+<!--        for (let key in object) {-->
+<!--            return false;-->
+<!--        }-->
+
+<!--        return true;-->
+<!--    }-->
+<!--</script>-->
+
+<!--<script>-->
+<!--    let salaries = {-->
+<!--   -->
+<!--    };-->
+
+<!--    let sum = 0;-->
+
+<!--    for (let key in salaries){-->
+<!--        sum += +salaries[key];-->
+<!--    }-->
+
+<!--    console.log(sum);-->
+<!--</script>-->
+
+<script>
+    let menu = {
+        width: 200,
+        height: 300,
+        title: "My menu"
+    };
+
+    function multiplyNumeric(object) {
+        for (let key in object) {
+            if(typeof object[key] == "number") {
+                object[key] *= 2;
+            }
+        }
+    }
+
+    multiplyNumeric(menu);
+
+    console.log(menu);
+</script>
+
+</body>
+</html>

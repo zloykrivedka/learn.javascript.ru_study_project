@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>learn.javascript.ru</title>
+</head>
+<body>
+<h1>Exercise</h1>
+
+<script>
+    var firstNumber = prompt("Input number 1: ", "0");
+    var secondNumber = prompt("Input number 2: ", "0");
+
+    function sum(fn, sn) {
+        let a = +fn;
+        let b = +sn;
+
+        if (Number.isNaN(+fn) || Number.isNaN(+sn)) {
+            return "isNaN!";
+        }
+
+        return "Result: " + (a + b);
+    }
+
+
+    alert(sum(firstNumber, secondNumber));
+</script>
+
+</body>
+</html>

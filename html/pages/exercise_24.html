@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>learn.javascript.ru</title>
+</head>
+<body>
+<h1>Exercise</h1>
+
+<script>
+    function truncate(str, maxLength) {
+        let endOfString = "...";
+
+        if (str.length > maxLength) {
+            return str.substr(0, maxLength - endOfString.length) + endOfString;
+        } else {
+            return str;
+        }
+    }
+
+    alert(truncate("Вот, что мне хотелось бы сказать на эту тему:", 6));
+    //= "Вот, что мне хоте..."
+
+    alert(truncate("Всем привет!", 20));
+    // = "Всем привет!"
+</script>
+
+</body>
+</html>

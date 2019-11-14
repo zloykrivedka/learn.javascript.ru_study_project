@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>learn.javascript.ru</title>
+</head>
+<body>
+<h1>Exercise</h1>
+
+<script>
+// function fib(n) {
+//     let fi = (1 + Math.sqrt(5))/2;
+//
+//     return (Math.pow(fi, n) - Math.pow(-fi, -n)) / ((2 * fi) - 1);
+// }
+function fib(n){
+    let a = 1;
+    let b = 1;
+
+    let current = 0;
+
+    for(let i = 2; i < n; i++) {
+        current = a+b;
+        a = b;
+        b = current;
+
+        console.log(current);
+    }
+
+    return current;
+}
+
+console.log( fib(3) ); // 2
+console.log( fib(7) ); // 13
+console.log(fib(77)); // 5527939700884757
+</script>
+
+</body>
+</html>

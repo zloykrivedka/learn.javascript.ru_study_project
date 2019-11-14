@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>learn.javascript.ru</title>
+</head>
+<body>
+<h1>Exercise</h1>
+
+<script>
+    "use strict";
+
+    let salaries = {
+        "Вася": 100,
+        "Петя": 300,
+        "Даша": 250
+    };
+
+    let tatal = 0;
+
+    for (let key in salaries) {
+        tatal += salaries[key];
+    }
+
+    alert("Total: " + tatal);
+</script>
+
+</body>
+</html>

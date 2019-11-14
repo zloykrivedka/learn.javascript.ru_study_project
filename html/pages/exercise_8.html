@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 8</title>
+</head>
+<body>
+<h1>Exercise 8</h1>
+
+<script>
+
+    var login = prompt('Insert login', '');
+    var password;
+
+    if (login !== null && login !== '') {
+        if (login === 'Админ') {
+            password = prompt('Insert password', '');
+
+            if (password !== null && password !== '') {
+                if (password === 'Чёрный Властелин') {
+                    alert('Добро пожаловать!');
+                } else {
+                    alert('Пароль неверен');
+                }
+            } else {
+                alert('Вход отменён');
+            }
+        } else {
+            alert("Я вас не знаю");
+        }
+
+    } else {
+        alert('Вход отменён');
+    }
+
+</script>
+
+</body>
+</html>

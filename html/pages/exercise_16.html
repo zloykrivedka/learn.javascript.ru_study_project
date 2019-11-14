@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>learn.javascript.ru</title>
+</head>
+<body>
+<h1>Exercise</h1>
+
+<script>
+    function pow(x, n) {
+        let result = 1;
+
+        for(let i = 0; i < n; i++) {
+            result = result * x;
+        }
+
+        return result
+    }
+
+    function showPow(argument, expanent) {
+        return expanent >= 1 ? alert(pow(argument, expanent)) : alert("Expanent is not a natural number");
+    }
+
+    showPow(+prompt("Argument?", ''), +prompt("Expanent?", ''));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>learn.javascript.ru</title>
+</head>
+<body>
+<h1>Exercise</h1>
+
+<script>
+    function sumTo_1(n) {
+        let sum = 0;
+
+        for(let i = n; i > 0; i--) {
+            sum += i;
+        }
+
+        return sum;
+    }
+
+    function sumTo_2(n) {
+        let iter = n;
+
+        if(n > 1) {
+            n = n + sumTo_2(iter-1);
+        }
+
+        return n;
+    }
+
+    function sumTo_3(n) {
+        return (n * (n + 1)) / 2;
+    }
+
+    let n = 100;
+
+    console.log("result: " + sumTo_1(n));
+    console.log("result_2: " + sumTo_2(n));
+    console.log("result_3: " + sumTo_3(n));
+</script>
+
+</body>
+</html>
